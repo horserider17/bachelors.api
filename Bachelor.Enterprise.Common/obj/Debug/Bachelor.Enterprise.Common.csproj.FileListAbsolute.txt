@@ -1,0 +1,5 @@
+E:\Bachelors\Bachelor.Enterprise.Common\bin\Debug\Bachelor.Enterprise.Common.dll
+E:\Bachelors\Bachelor.Enterprise.Common\bin\Debug\Bachelor.Enterprise.Common.pdb
+E:\Bachelors\Bachelor.Enterprise.Common\obj\Debug\Bachelor.Enterprise.Common.dll
+E:\Bachelors\Bachelor.Enterprise.Common\obj\Debug\Bachelor.Enterprise.Common.pdb
+E:\Bachelors\Bachelor.Enterprise.Common\obj\Debug\Bachelor.Enterprise.Common.csprojResolveAssemblyReference.cache

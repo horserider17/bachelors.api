@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bachelors.API</name>
+    </assembly>
+    <members>
+        <member name="T:Bachelors.API.SwaggerConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.SwaggerConfig.Register">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bachelors.API.UnityConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.UnityConfig.RegisterComponents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Bachelors.API.WebApiConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:Bachelors.API.Controllers.ApiBaseController">
+            <summary>
+            Base class for all the controllers
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.Controllers.ApiBaseController.BuildSuccessResponse(System.Net.HttpStatusCode)">
+            <summary>
+            Returns success response
+            </summary>
+            <param name="httpStatus">HttpStatusCode</param>
+            <returns>HttpResponseMessage object</returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.ApiBaseController.BuildSuccessResponse``1(System.Net.HttpStatusCode,``0)">
+            <summary>
+            Returns success response
+            </summary>
+            <param name="httpStatus">HttpStatusCode</param>
+            <param name="resultValue">Result</param>
+            <returns>HttpResponseMessage object</returns>
+        </member>
+        <member name="T:Bachelors.API.Controllers.CreateGroupController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.Controllers.CreateGroupController.#ctor(Bachelor.Core.Application.CreateGroup.ICreateGroupApplication)">
+            <summary>
+            
+            </summary>
+            <param name="createGroup"></param>
+        </member>
+        <member name="M:Bachelors.API.Controllers.CreateGroupController.GetGroup(System.String)">
+            <summary>
+            Get group details
+            </summary>
+            <param name="providerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.CreateGroupController.GetMembers(System.Int32)">
+            <summary>
+            Get group details
+            </summary>
+            <param name="providerGroupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.CreateGroupController.CreateGroup(System.String,System.String)">
+            <summary>
+            Creates Group for a provider
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.CreateGroupController.AddMember(System.String,System.Int32)">
+            <summary>
+            Provider can add a member in a group
+            </summary>
+            <param name="memberProviderId"></param>
+            <param name="adminGroupId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bachelors.API.Controllers.TransactionsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.Controllers.TransactionsController.#ctor(Bachelor.Core.Application.Transactions.ITransactionsApplication)">
+            <summary>
+            
+            </summary>
+            <param name="transactionsApplication"></param>
+        </member>
+        <member name="M:Bachelors.API.Controllers.TransactionsController.CreateBalanceSheet(System.String,System.Decimal,System.Int32)">
+            <summary>
+            Creates a balance sheet
+            </summary>
+            <param name="balanceSheetName"></param>
+            <param name="totalAmount"></param>
+            <param name="providerGroupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.TransactionsController.CreateItem(System.String,System.Decimal,System.String,System.Int32,System.Int32)">
+            <summary>
+            Provider can insert a item purchased
+            </summary>
+            <param name="itemName"></param>
+            <param name="cost"></param>
+            <param name="providerId"></param>
+            <param name="providerGroupId"></param>
+            <param name="grpBlncId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.TransactionsController.GetExpenditure(System.Int32,System.Int32)">
+            <summary>
+            Gets total amount and expenditure of group
+            </summary>
+            <param name="providerGroupId"></param>
+            <param name="grpBlncId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.TransactionsController.GetIndividualExpenditure(System.Int32,System.Int32)">
+            <summary>
+            Gets list of individual expenditure of a group
+            </summary>
+            <param name="providerGroupId"></param>
+            <param name="grpBlncId"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Bachelors.API.Controllers.TransactionsController.GetBalanceSheet(System.Int32)" -->
+        <member name="T:Bachelors.API.Controllers.UserProfileController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.Controllers.UserProfileController.#ctor(Bachelor.Core.Application.UserProfile.IUserProfileApplication)">
+            <summary>
+            
+            </summary>
+            <param name="userProfileApplication"></param>
+        </member>
+        <member name="M:Bachelors.API.Controllers.UserProfileController.GetUserProfile(System.String)">
+            <summary>
+            Gets user profile
+            </summary>
+            <param name="providerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Bachelors.API.Controllers.UserProfileController.RegisterUser(Bachelor.Entities.UserProfile.GetProfileEntity)">
+            <summary>
+            Registers a new User
+            </summary>
+            <param name="getProfile"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Bachelors.API.WebApiApplication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Bachelors.API.WebApiApplication.Application_Start">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Bachelor.Core.Application.dll
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Bachelor.Core.Application.pdb
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Bachelor.DataAccess.dll
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Bachelor.Entities.dll
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Bachelor.DataAccess.pdb
+E:\Bachelors\Bachelor.Core.Application\bin\Debug\Bachelor.Entities.pdb
+E:\Bachelors\Bachelor.Core.Application\obj\Debug\Bachelor.Core.Application.csprojResolveAssemblyReference.cache
+E:\Bachelors\Bachelor.Core.Application\obj\Debug\Bachelor.Core.Application.dll
+E:\Bachelors\Bachelor.Core.Application\obj\Debug\Bachelor.Core.Application.pdb

@@ -1,0 +1,5 @@
+E:\Bachelors\Bachelor.DataAccess\bin\Debug\Bachelor.DataAccess.dll
+E:\Bachelors\Bachelor.DataAccess\bin\Debug\Bachelor.DataAccess.pdb
+E:\Bachelors\Bachelor.DataAccess\obj\Debug\Bachelor.DataAccess.csprojResolveAssemblyReference.cache
+E:\Bachelors\Bachelor.DataAccess\obj\Debug\Bachelor.DataAccess.dll
+E:\Bachelors\Bachelor.DataAccess\obj\Debug\Bachelor.DataAccess.pdb

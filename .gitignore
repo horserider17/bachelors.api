@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Bachelor.Enterprise.Common/bin/Debug
+/Bachelor.Enterprise.Common/obj/Debug
+/Bachelor.Entities/bin/Debug
+/Bachelor.Entities/obj/Debug
+/Bachelors.API/bin
+/Bachelors.API/obj/Debug
+/packages
+/Bachelor.Core.Application/bin/Debug
+/Bachelor.Core.Application/obj/Debug
+/Bachelor.DataAccess/bin/Debug
+/Bachelor.DataAccess/obj/Debug

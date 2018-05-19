@@ -1,5 +1,0 @@
-E:\Bachelors\Bachelor.Enterprise.Common\bin\Release\Bachelor.Enterprise.Common.dll
-E:\Bachelors\Bachelor.Enterprise.Common\bin\Release\Bachelor.Enterprise.Common.pdb
-E:\Bachelors\Bachelor.Enterprise.Common\obj\Release\Bachelor.Enterprise.Common.dll
-E:\Bachelors\Bachelor.Enterprise.Common\obj\Release\Bachelor.Enterprise.Common.pdb
-E:\Bachelors\Bachelor.Enterprise.Common\obj\Release\Bachelor.Enterprise.Common.csprojResolveAssemblyReference.cache

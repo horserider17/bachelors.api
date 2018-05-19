@@ -1,4 +1,0 @@
-E:\Bachelors\Bachelor.Entities\bin\Release\Bachelor.Entities.dll
-E:\Bachelors\Bachelor.Entities\bin\Release\Bachelor.Entities.pdb
-E:\Bachelors\Bachelor.Entities\obj\Release\Bachelor.Entities.dll
-E:\Bachelors\Bachelor.Entities\obj\Release\Bachelor.Entities.pdb

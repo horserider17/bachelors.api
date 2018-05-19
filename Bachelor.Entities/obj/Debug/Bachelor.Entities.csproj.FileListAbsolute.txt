@@ -1,5 +1,0 @@
-E:\Bachelors\Bachelor.Entities\bin\Debug\Bachelor.Entities.dll
-E:\Bachelors\Bachelor.Entities\bin\Debug\Bachelor.Entities.pdb
-E:\Bachelors\Bachelor.Entities\obj\Debug\Bachelor.Entities.dll
-E:\Bachelors\Bachelor.Entities\obj\Debug\Bachelor.Entities.pdb
-E:\Bachelors\Bachelor.Entities\obj\Debug\Bachelor.Entities.csprojResolveAssemblyReference.cache

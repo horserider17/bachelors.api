@@ -86,7 +86,7 @@ namespace Bachelor.Core.Application.Transactions
         /// <param name="providerGroupId"></param>
         /// <param name="grpBlncId"></param>
         /// <returns></returns>
-        public List<ExpenditureEntityList> GetIndividualExpenditure(int providerGroupId, int grpBlncId)
+        public ExpenditureEntity GetIndividualExpenditure(int providerGroupId, int grpBlncId)
         {
             var result = _transactionsDAL.GetIndividualExpenditure(providerGroupId, grpBlncId);
             return result;

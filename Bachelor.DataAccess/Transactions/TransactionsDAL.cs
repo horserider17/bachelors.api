@@ -125,9 +125,11 @@ namespace Bachelor.DataAccess.Transactions
         /// <param name="providerGroupId"></param>
         /// <param name="grpBlncId"></param>
         /// <returns></returns>
-        public List<ExpenditureEntityList> GetIndividualExpenditure(int providerGroupId, int grpBlncId)
+        public ExpenditureEntity GetIndividualExpenditure(int providerGroupId, int grpBlncId)
         {
+            ExpenditureEntity expenditureEntity = null;
             ExpenditureEntityList expenditure = null;
+            ItemList itemData = null;
 
             var expenditureList = new List<ExpenditureEntityList>();
 
@@ -137,32 +139,47 @@ namespace Bachelor.DataAccess.Transactions
 
             var expenditureReader = _db.ExecuteDataSet(dbCommand);
 
+            for (int i = 0; i < expenditureReader.Tables[0].Rows.Count; i++)
+            {
+                var data = expenditureReader.Tables[0].Rows[i];
+                expenditureEntity = new ExpenditureEntity
+                {
+                    TotalAmount = Convert.ToDecimal(data["totalamount"]),
+                    RemainingAmount = Convert.ToDecimal(data["remainingamount"])
+                };
+            }
+
             for (int i = 0; i < expenditureReader.Tables[1].Rows.Count; i++)
             {
                 var data = expenditureReader.Tables[1].Rows[i];
                 expenditure = new ExpenditureEntityList
                 {
-                    Cost = Convert.ToDecimal(data["cost"]),
-                    ItemName = data["itemname"].ToString(),
-                   // SpentDate = Convert.ToDateTime(data["createddate"]),
+                    ProviderId = Convert.ToInt32(data["providerid"]),
                     ProviderName = data["firstname"].ToString(),
-                    
+                    IndividualTotal = Convert.ToDecimal(data["total"])
                 };
+                var itemlist = new List<ItemList>();
+                for (int j = 0; j < expenditureReader.Tables[2].Rows.Count; j++)
+                {
+                    var itemDetails = expenditureReader.Tables[2].Rows[j];
+                    if(expenditure.ProviderId == Convert.ToInt32(itemDetails["providerid"]))
+                    {
+                        itemData = new ItemList
+                        {
+                            Cost = Convert.ToDecimal(itemDetails["cost"]),
+                            ItemName = itemDetails["itemname"].ToString(),
+                            SpentDate = Convert.ToString(itemDetails["createddate"]),
+                        };
+                        itemlist.Add(itemData);
+                    }
+                }
+                expenditure.ItemList = itemlist;
                 expenditureList.Add(expenditure);
             }
 
-            //while (expenditureReader.Read())
-            //{
-            //    expenditure = new ExpenditureEntityList
-            //    {
-            //        Cost = Convert.ToDecimal(expenditureReader["Cost"]),
-            //        ItemName = expenditureReader["ItemName"].ToString(),
-            //        ProviderName = expenditureReader["FirstName"].ToString(),
-            //        //SpentDate = expenditureReader.IsDBNull("CreatedDate")? (DateTime?)null : (DateTime?)expenditureReader["DueDate"]
-            //    };
-            //    expenditureList.Add(expenditure);
-            //}
-            return expenditureList;
+            expenditureEntity.ExpenditureEntityList = expenditureList;
+
+            return expenditureEntity;
         }
     }
 }

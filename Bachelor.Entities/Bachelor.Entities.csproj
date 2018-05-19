@@ -46,6 +46,7 @@
     <Compile Include="Transactions\BalanceSheetEntityList.cs" />
     <Compile Include="Transactions\ExpenditureEntity.cs" />
     <Compile Include="Transactions\ExpenditureEntityList.cs" />
+    <Compile Include="Transactions\ItemList.cs" />
     <Compile Include="UserProfile\GetProfileEntity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

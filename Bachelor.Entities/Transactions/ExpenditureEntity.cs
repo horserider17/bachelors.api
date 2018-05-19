@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace Bachelor.Entities.Transactions
 {
     public class ExpenditureEntity
@@ -7,6 +9,6 @@ namespace Bachelor.Entities.Transactions
 
         public decimal RemainingAmount { get; set; }
 
-        public ExpenditureEntityList ExpenditureEntityList { get; set; }
+        public List<ExpenditureEntityList> ExpenditureEntityList { get; set; }
     }
 }

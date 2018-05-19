@@ -6,26 +6,21 @@ using System.Threading.Tasks;
 
 namespace Bachelor.Entities.Transactions
 {
-    public class ExpenditureEntityList
+    public class ItemList
     {
         /// <summary>
         /// 
         /// </summary>
-        public int ProviderId { get; set; }
+        public string ItemName { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public string ProviderName { get; set; }
+        public decimal Cost { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public decimal IndividualTotal { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public List<ItemList> ItemList { get; set; }
+        public string SpentDate { get; set; }
     }
 }

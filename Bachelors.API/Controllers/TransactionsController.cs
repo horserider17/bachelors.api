@@ -104,14 +104,14 @@ namespace Bachelors.API.Controllers
         /// <param name="grpBlncId"></param>
         /// <returns></returns>
         [HttpGet]
-        [ResponseType(typeof(APIResponse<List<ExpenditureEntityList>>))]
+        [ResponseType(typeof(APIResponse<ExpenditureEntity>))]
         [Route("api/Transactions/GetIndividualExpenditure")]
         public HttpResponseMessage GetIndividualExpenditure(int providerGroupId, int grpBlncId)
         {
             try
             {
                 var result = _transactionsApplication.GetIndividualExpenditure(providerGroupId, grpBlncId);
-                return Request.CreateResponse(HttpStatusCode.OK, ServiceResponse<List<ExpenditureEntityList>>.Instance.BuildResponse(ResponseCodes.OK, result));
+                return Request.CreateResponse(HttpStatusCode.OK, ServiceResponse<ExpenditureEntity>.Instance.BuildResponse(ResponseCodes.OK, result));
             }
             catch (Exception ex)
             {

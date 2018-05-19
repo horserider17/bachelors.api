@@ -43,7 +43,7 @@ namespace Bachelor.DataAccess.Transactions.Interfaces
         /// <param name="providerGroupId"></param>
         /// <param name="grpBlncId"></param>
         /// <returns></returns>
-        List<ExpenditureEntityList> GetIndividualExpenditure(int providerGroupId, int grpBlncId);
+        ExpenditureEntity GetIndividualExpenditure(int providerGroupId, int grpBlncId);
 
         /// <summary>
         /// 

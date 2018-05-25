@@ -26,7 +26,7 @@ namespace Bachelor.DataAccess.CreateGroup.Interfaces
         /// <param name="memberProviderId"></param>
         /// <param name="adminGroupId"></param>
         /// <returns></returns>
-        bool AddMember(string memberProviderId, int adminGroupId);
+        bool AddMember(int memberProviderId, int adminGroupId);
 
         /// <summary>
         /// 

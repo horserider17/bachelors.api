@@ -25,7 +25,7 @@ namespace Bachelor.Core.Application.CreateGroup
         /// <param name="memberProviderId"></param>
         /// <param name="adminGroupId"></param>
         /// <returns></returns>
-        string AddMember(string memberProviderId, int adminGroupId);
+        string AddMember(int memberProviderId, int adminGroupId);
 
         /// <summary>
         /// 

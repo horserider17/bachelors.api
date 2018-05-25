@@ -50,7 +50,7 @@ namespace Bachelor.Core.Application.CreateGroup
         /// <param name="memberProviderId"></param>
         /// <param name="adminGroupId"></param>
         /// <returns></returns>
-        public string AddMember(string memberProviderId, int adminGroupId)
+        public string AddMember(int memberProviderId, int adminGroupId)
         {
             var result = _createGroupDAL.AddMember(memberProviderId, adminGroupId);
 

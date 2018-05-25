@@ -104,7 +104,7 @@ namespace Bachelors.API.Controllers
         [HttpPost]
         [ResponseType(typeof(APIResponse<string>))]
         [Route("api/CreateGroup/AddMember")]
-        public HttpResponseMessage AddMember(string memberProviderId, int adminGroupId)
+        public HttpResponseMessage AddMember(int memberProviderId, int adminGroupId)
         {
             try
             {

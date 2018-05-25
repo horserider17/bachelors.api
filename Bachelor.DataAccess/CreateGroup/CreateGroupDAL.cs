@@ -77,12 +77,12 @@ namespace Bachelor.DataAccess
         /// <param name="memberProviderId"></param>
         /// <param name="adminGroupId"></param>
         /// <returns></returns>
-        public bool AddMember(string memberProviderId, int adminGroupId)
+        public bool AddMember(int memberProviderId, int adminGroupId)
         {
-            Guid providerGuid;
-            Guid.TryParse(memberProviderId, out providerGuid);
+            //Guid providerGuid;
+            //Guid.TryParse(memberProviderId, out providerGuid);
 
-            object[] param = { providerGuid, adminGroupId };
+            object[] param = { memberProviderId, adminGroupId };
 
             var dbCommand = _db.GetCommand("INSERT_INTO_GROUP_MEMBER", param);
 

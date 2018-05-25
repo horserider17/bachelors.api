@@ -27,12 +27,9 @@ namespace Bachelor.DataAccess
         /// 
         /// </summary>
         /// <returns></returns>
-        public List<GetGroupEntity> GetGroup(string providerId)
+        public List<GetGroupEntity> GetGroup(int providerId)
         {
-            Guid providerGuid;
-            Guid.TryParse(providerId, out providerGuid);
-
-            object[] param = { providerGuid };
+            object[] param = { providerId };
 
             var dbCommand = _db.GetCommand("GET_PROVIDER_GROUP_DETAILS", param);
 

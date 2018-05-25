@@ -13,3 +13,12 @@
 /Bachelor.Core.Application/obj/Debug
 /Bachelor.DataAccess/bin/Debug
 /Bachelor.DataAccess/obj/Debug
+/Bachelor.Core.Application/bin/Release
+/Bachelor.Core.Application/obj/Release
+/Bachelor.DataAccess/bin/Release
+/Bachelor.DataAccess/obj/Release
+/Bachelor.Enterprise.Common/bin/Release
+/Bachelor.Enterprise.Common/obj/Release
+/Bachelor.Entities/bin/Release
+/Bachelor.Entities/obj/Release
+/Bachelors.API/obj/Release

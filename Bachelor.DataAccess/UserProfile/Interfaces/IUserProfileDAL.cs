@@ -11,6 +11,6 @@ namespace Bachelor.DataAccess.UserProfile.Interfaces
     {
         GetProfileEntity GetUserProfile(string providerId);
 
-        bool RegisterUser(GetProfileEntity getProfile);
+        int RegisterUser(GetProfileEntity getProfile);
     }
 }

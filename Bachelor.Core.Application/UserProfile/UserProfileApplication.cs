@@ -40,14 +40,10 @@ namespace Bachelor.Core.Application.UserProfile
         /// </summary>
         /// <param name="getProfile"></param>
         /// <returns></returns>
-        public string RegisterUser(GetProfileEntity getProfile)
+        public int RegisterUser(GetProfileEntity getProfile)
         {
-            var result = _userProfileDAL.RegisterUser(getProfile);
-
-            if (result)
-                return "Registered Successfully";
-            else
-                return "Error";
+            var providerId = _userProfileDAL.RegisterUser(getProfile);
+            return providerId;
         }
     }
 }

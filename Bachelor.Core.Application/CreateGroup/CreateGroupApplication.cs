@@ -25,7 +25,7 @@ namespace Bachelor.Core.Application.CreateGroup
         /// 
         /// </summary>
         /// <returns></returns>
-        public List<GetGroupEntity> GetGroupDetails(string providerId)
+        public List<GetGroupEntity> GetGroupDetails(int providerId)
         {
             var getGroupDetails = _createGroupDAL.GetGroup(providerId);
             return getGroupDetails;

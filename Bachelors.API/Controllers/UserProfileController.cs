@@ -54,14 +54,14 @@ namespace Bachelors.API.Controllers
         /// <param name="getProfile"></param>
         /// <returns></returns>
         [HttpPost]
-        [ResponseType(typeof(APIResponse<string>))]
+        [ResponseType(typeof(APIResponse<int>))]
         [Route("api/UserProfile/RegisterUser")]
         public HttpResponseMessage RegisterUser(GetProfileEntity getProfile)
         {
             try
             {
                 var result = _userProfileApplication.RegisterUser(getProfile);
-                return Request.CreateResponse(HttpStatusCode.OK, ServiceResponse<string>.Instance.BuildResponse(ResponseCodes.OK, result));
+                return Request.CreateResponse(HttpStatusCode.OK, ServiceResponse<int>.Instance.BuildResponse(ResponseCodes.OK, result));
             }
             catch (Exception ex)
             {

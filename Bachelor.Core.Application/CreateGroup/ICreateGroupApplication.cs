@@ -9,7 +9,7 @@ namespace Bachelor.Core.Application.CreateGroup
         /// 
         /// </summary>
         /// <returns></returns>
-        List<GetGroupEntity> GetGroupDetails(string providerId);
+        List<GetGroupEntity> GetGroupDetails(int providerId);
 
         /// <summary>
         /// 

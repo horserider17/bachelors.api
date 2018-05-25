@@ -21,6 +21,12 @@ namespace Bachelor.Entities.UserProfile
         /// <summary>
         /// 
         /// </summary>
-        public string Mobile { get; set; }
+        public string Email { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string UserId { get; set; }
+
     }
 }

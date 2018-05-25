@@ -10,7 +10,7 @@ namespace Bachelor.DataAccess.CreateGroup.Interfaces
         /// </summary>
         /// <param name="providerId"></param>
         /// <returns></returns>
-        List<GetGroupEntity> GetGroup(string providerId);
+        List<GetGroupEntity> GetGroup(int providerId);
 
         /// <summary>
         /// 

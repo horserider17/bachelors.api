@@ -24,6 +24,6 @@ namespace Bachelor.Core.Application.UserProfile
         /// </summary>
         /// <param name="getProfile"></param>
         /// <returns></returns>
-        string RegisterUser(GetProfileEntity getProfile);
+        int RegisterUser(GetProfileEntity getProfile);
     }
 }

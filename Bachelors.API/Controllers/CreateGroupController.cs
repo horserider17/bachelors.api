@@ -37,7 +37,7 @@ namespace Bachelors.API.Controllers
         [HttpGet]
         [ResponseType(typeof(APIResponse<List<GetGroupEntity>>))]
         [Route("api/CreateGroup/GetGroup")]
-        public HttpResponseMessage GetGroup(string providerId)
+        public HttpResponseMessage GetGroup(int providerId)
         {
             try
             {

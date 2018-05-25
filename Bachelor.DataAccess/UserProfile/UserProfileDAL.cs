@@ -50,7 +50,7 @@ namespace Bachelor.DataAccess.UserProfile
                 {
                     FirstName = providerDataReader["FirstName"].ToString(),
                     LastName = providerDataReader["LastName"].ToString(),
-                    Mobile =providerDataReader["Mobile"].ToString()
+                    Email =providerDataReader["Mobile"].ToString()
                 };
             }
 
@@ -62,17 +62,25 @@ namespace Bachelor.DataAccess.UserProfile
         /// </summary>
         /// <param name="getProfile"></param>
         /// <returns></returns>
-        public bool RegisterUser(GetProfileEntity getProfile)
+        public int RegisterUser(GetProfileEntity getProfile)
         {
             var providerGuid = Guid.NewGuid();
 
-            object[] param = { getProfile.FirstName, getProfile.LastName, getProfile.Mobile, providerGuid };
+            object[] param = { getProfile.FirstName, getProfile.LastName, getProfile.Email, providerGuid, getProfile.UserId};
 
-            var dbCommand = _db.GetCommand("dbo.INSERT_INTO_PROVIDER", param);
+            var dbCommand = _db.GetStoredProcCommand("dbo.INSERT_INTO_PROVIDER");
+            _db.AddInParameter(dbCommand, "@firstname", System.Data.DbType.String, getProfile.FirstName);
+            _db.AddInParameter(dbCommand, "@lastname", System.Data.DbType.String, getProfile.LastName);
+            _db.AddInParameter(dbCommand, "@email", System.Data.DbType.String, getProfile.Email);
+            _db.AddInParameter(dbCommand, "@providerguid", System.Data.DbType.Guid, providerGuid);
+            _db.AddInParameter(dbCommand, "@userid", System.Data.DbType.String, getProfile.UserId);
+            _db.AddOutParameter(dbCommand, "@providerid", System.Data.DbType.Int32,0);
 
             var result = _db.ExecuteNonQuery(dbCommand);
 
-            return result > 0;
+            int providerId = Convert.ToInt32(_db.GetParameterValue(dbCommand, "@providerid"));
+
+            return providerId;
         }
     }
 }

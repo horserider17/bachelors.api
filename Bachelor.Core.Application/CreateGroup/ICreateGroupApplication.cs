@@ -17,7 +17,7 @@ namespace Bachelor.Core.Application.CreateGroup
         /// <param name="providerId"></param>
         /// <param name="balanceSheetName"></param>
         /// <returns></returns>
-        string CreateGroup(string providerId, string balanceSheetName);
+        string CreateGroup(int providerId, string balanceSheetName);
 
         /// <summary>
         /// 

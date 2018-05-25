@@ -18,7 +18,7 @@ namespace Bachelor.DataAccess.CreateGroup.Interfaces
         /// <param name="providerId"></param>
         /// <param name="balanceSheetName"></param>
         /// <returns></returns>
-        bool CreateGroup(string providerId, string balanceSheetName);
+        bool CreateGroup(int providerId, string balanceSheetName);
 
         /// <summary>
         /// 

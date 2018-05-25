@@ -10,25 +10,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>05/20/2018 12:21:58</publishTime>
+      <publishTime>05/25/2018 18:36:13</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>05/20/2018 12:21:57</publishTime>
+      <publishTime>05/25/2018 18:36:13</publishTime>
     </File>
     <File Include="bin/Bachelor.Core.Application.dll">
-      <publishTime>05/20/2018 12:21:26</publishTime>
+      <publishTime>05/25/2018 18:35:41</publishTime>
     </File>
     <File Include="bin/Bachelor.DataAccess.dll">
-      <publishTime>05/20/2018 12:21:25</publishTime>
+      <publishTime>05/25/2018 18:35:41</publishTime>
     </File>
     <File Include="bin/Bachelor.Enterprise.Common.dll">
-      <publishTime>05/20/2018 12:21:25</publishTime>
+      <publishTime>05/25/2018 18:35:39</publishTime>
     </File>
     <File Include="bin/Bachelor.Entities.dll">
-      <publishTime>05/20/2018 12:21:25</publishTime>
+      <publishTime>05/25/2018 18:35:40</publishTime>
     </File>
     <File Include="bin/Bachelors.API.dll">
-      <publishTime>05/20/2018 12:21:37</publishTime>
+      <publishTime>05/25/2018 18:35:52</publishTime>
     </File>
     <File Include="bin/CommonServiceLocator.dll">
       <publishTime>10/10/2017 13:54:50</publishTime>
@@ -235,7 +235,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/19/2018 18:17:16</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>05/20/2018 12:21:41</publishTime>
+      <publishTime>05/25/2018 18:35:55</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>05/20/2018 12:21:38</publishTime>

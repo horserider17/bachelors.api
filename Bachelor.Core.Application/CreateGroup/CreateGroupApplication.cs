@@ -34,7 +34,7 @@ namespace Bachelor.Core.Application.CreateGroup
         /// <summary>
         /// 
         /// </summary>
-        public string CreateGroup(string providerId, string groupName)
+        public string CreateGroup(int providerId, string groupName)
         {
             var result =  _createGroupDAL.CreateGroup(providerId, groupName);
 

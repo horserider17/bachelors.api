@@ -60,12 +60,9 @@ namespace Bachelor.DataAccess
         /// 
         /// </summary>
         /// <param name="providerId"></param>
-        public bool CreateGroup(string providerId, string groupName)
+        public bool CreateGroup(int providerId, string groupName)
         {
-            Guid providerGuid;
-            Guid.TryParse(providerId, out providerGuid);
-
-            object[] param = { providerGuid, groupName };
+            object[] param = { providerId, groupName };
 
             var dbCommand = _db.GetCommand("INSERT_INTO_CREATE_GROUP", param);
 

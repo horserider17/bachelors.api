@@ -82,7 +82,7 @@ namespace Bachelors.API.Controllers
         [HttpPost]
         [ResponseType(typeof(APIResponse<string>))]
         [Route("api/CreateGroup/CreateGroup")]
-        public HttpResponseMessage CreateGroup(string providerId, string groupName)
+        public HttpResponseMessage CreateGroup(int providerId, string groupName)
         {
             try
             {

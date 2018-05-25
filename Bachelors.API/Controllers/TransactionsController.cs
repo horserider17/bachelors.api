@@ -62,7 +62,7 @@ namespace Bachelors.API.Controllers
         [HttpPost]
         [ResponseType(typeof(APIResponse<string>))]
         [Route("api/Transactions/CreateItem")]
-        public HttpResponseMessage CreateItem(string itemName, decimal cost, string providerId, int providerGroupId, int grpBlncId)
+        public HttpResponseMessage CreateItem(string itemName, decimal cost, int providerId, int providerGroupId, int grpBlncId)
         {
             try
             {

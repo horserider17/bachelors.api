@@ -48,12 +48,9 @@ namespace Bachelor.DataAccess.Transactions
         /// <param name="providerGroupId"></param>
         /// <param name="grpBlncId"></param>
         /// <returns></returns>
-        public bool CreateItem(string itemName, decimal cost, string providerId, int providerGroupId, int grpBlncId)
+        public bool CreateItem(string itemName, decimal cost, int providerId, int providerGroupId, int grpBlncId)
         {
-            Guid providerGuid;
-            Guid.TryParse(providerId, out providerGuid);
-
-            object[] param = { itemName, cost, providerGuid, providerGroupId, grpBlncId };
+            object[] param = { itemName, cost, providerId, providerGroupId, grpBlncId };
 
             var dbCommand = _db.GetCommand("INSERT_INTO_ITEM_COST", param);
 

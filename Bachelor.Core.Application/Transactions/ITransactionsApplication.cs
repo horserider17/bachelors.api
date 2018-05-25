@@ -27,7 +27,7 @@ namespace Bachelor.Core.Application.Transactions
         /// <param name="providerGroupId"></param>
         /// <param name="grpBlncId"></param>
         /// <returns></returns>
-        string CreateItem(string itemName, decimal cost, string providerId, int providerGroupId, int grpBlncId);
+        string CreateItem(string itemName, decimal cost, int providerId, int providerGroupId, int grpBlncId);
 
         /// <summary>
         /// 

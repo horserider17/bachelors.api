@@ -12,5 +12,7 @@ namespace Bachelor.DataAccess.UserProfile.Interfaces
         GetProfileEntity GetUserProfile(string providerId);
 
         int RegisterUser(GetProfileEntity getProfile);
+
+        SearchUsersResponse SearchUsers(string email);
     }
 }

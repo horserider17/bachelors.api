@@ -48,6 +48,7 @@
     <Compile Include="Transactions\ExpenditureEntityList.cs" />
     <Compile Include="Transactions\ItemList.cs" />
     <Compile Include="UserProfile\GetProfileEntity.cs" />
+    <Compile Include="UserProfile\SearchUsersResponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

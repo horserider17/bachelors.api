@@ -68,5 +68,26 @@ namespace Bachelors.API.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ServiceResponse.Instance.BuildResponse(ResponseCodes.SERVERERROR));
             }
         }
+
+        /// <summary>
+        /// Registers a new User
+        /// </summary>
+        /// <param name="getProfile"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [ResponseType(typeof(APIResponse<SearchUsersResponse>))]
+        [Route("api/UserProfile/SearchUsers")]
+        public HttpResponseMessage SearchUsers(string email)
+        {
+            try
+            {
+                var result = _userProfileApplication.SearchUsers(email);
+                return Request.CreateResponse(HttpStatusCode.OK, ServiceResponse<SearchUsersResponse>.Instance.BuildResponse(ResponseCodes.OK, result));
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ServiceResponse.Instance.BuildResponse(ResponseCodes.SERVERERROR));
+            }
+        }
     }
 }

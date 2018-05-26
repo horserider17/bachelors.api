@@ -45,5 +45,16 @@ namespace Bachelor.Core.Application.UserProfile
             var providerId = _userProfileDAL.RegisterUser(getProfile);
             return providerId;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public SearchUsersResponse SearchUsers(string email)
+        {
+            var userDetails = _userProfileDAL.SearchUsers(email);
+            return userDetails;
+        }
     }
 }

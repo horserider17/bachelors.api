@@ -82,5 +82,34 @@ namespace Bachelor.DataAccess.UserProfile
 
             return providerId;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public SearchUsersResponse SearchUsers(string email)
+        {
+            object[] param = { email };
+
+            var dbCommand = _db.GetCommand("dbo.GET_SEARCH_USER", param);
+            var userDetailsReader = _db.ExecuteReader(dbCommand);
+
+            if (userDetailsReader == null)
+                throw new Exception();
+
+            SearchUsersResponse userDetails = null;
+
+            while (userDetailsReader.Read())
+            {
+                userDetails = new SearchUsersResponse
+                {
+                    email = userDetailsReader["email"].ToString(),
+                    providerId = Convert.ToInt32(userDetailsReader["providerid"])
+                };
+            }
+
+            return userDetails;
+        }
     }
 }

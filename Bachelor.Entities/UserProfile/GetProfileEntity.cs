@@ -28,5 +28,10 @@ namespace Bachelor.Entities.UserProfile
         /// </summary>
         public string UserId { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public string ImageUrl { get; set; }
+
     }
 }

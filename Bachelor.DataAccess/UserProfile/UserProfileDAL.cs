@@ -74,6 +74,7 @@ namespace Bachelor.DataAccess.UserProfile
             _db.AddInParameter(dbCommand, "@email", System.Data.DbType.String, getProfile.Email);
             _db.AddInParameter(dbCommand, "@providerguid", System.Data.DbType.Guid, providerGuid);
             _db.AddInParameter(dbCommand, "@userid", System.Data.DbType.String, getProfile.UserId);
+            _db.AddInParameter(dbCommand, "@imageurl", System.Data.DbType.String, getProfile.ImageUrl);
             _db.AddOutParameter(dbCommand, "@providerid", System.Data.DbType.Int32,0);
 
             var result = _db.ExecuteNonQuery(dbCommand);

@@ -11,11 +11,21 @@ namespace Bachelor.Entities.UserProfile
         /// <summary>
         /// 
         /// </summary>
+        public string providerName { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public string email { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         public int providerId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string imageUrl { get; set; }
     }
 }

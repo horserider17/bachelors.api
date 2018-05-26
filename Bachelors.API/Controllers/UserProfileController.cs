@@ -70,11 +70,11 @@ namespace Bachelors.API.Controllers
         }
 
         /// <summary>
-        /// Registers a new User
+        /// Searches a registered user
         /// </summary>
         /// <param name="getProfile"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpGet]
         [ResponseType(typeof(APIResponse<SearchUsersResponse>))]
         [Route("api/UserProfile/SearchUsers")]
         public HttpResponseMessage SearchUsers(string email)

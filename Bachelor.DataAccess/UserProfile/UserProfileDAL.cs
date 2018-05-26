@@ -104,8 +104,10 @@ namespace Bachelor.DataAccess.UserProfile
             {
                 userDetails = new SearchUsersResponse
                 {
-                    email = userDetailsReader["email"].ToString(),
-                    providerId = Convert.ToInt32(userDetailsReader["providerid"])
+                    providerName = Convert.ToString(userDetailsReader["providername"]), 
+                    email = Convert.ToString(userDetailsReader["email"]),
+                    providerId = Convert.ToInt32(userDetailsReader["providerid"]),
+                    imageUrl = Convert.ToString(userDetailsReader["imageurl"]),
                 };
             }
 

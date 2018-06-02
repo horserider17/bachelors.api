@@ -13,6 +13,6 @@ namespace Bachelor.DataAccess.UserProfile.Interfaces
 
         int RegisterUser(GetProfileEntity getProfile);
 
-        SearchUsersResponse SearchUsers(string email);
+        List<SearchUsersResponse> SearchUsers(string email);
     }
 }

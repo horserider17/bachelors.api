@@ -31,6 +31,6 @@ namespace Bachelor.Core.Application.UserProfile
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
-        SearchUsersResponse SearchUsers(string email);
+        List<SearchUsersResponse> SearchUsers(string email);
     }
 }

@@ -51,7 +51,7 @@ namespace Bachelor.Core.Application.UserProfile
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
-        public SearchUsersResponse SearchUsers(string email)
+        public List<SearchUsersResponse> SearchUsers(string email)
         {
             var userDetails = _userProfileDAL.SearchUsers(email);
             return userDetails;

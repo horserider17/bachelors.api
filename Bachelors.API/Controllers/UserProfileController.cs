@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using NLog;
 
 namespace Bachelors.API.Controllers
 {
@@ -65,6 +66,7 @@ namespace Bachelors.API.Controllers
             }
             catch (Exception ex)
             {
+                LogManager.GetCurrentClassLogger().Error(ex, ex.Message);
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ServiceResponse.Instance.BuildResponse(ResponseCodes.SERVERERROR));
             }
         }
@@ -82,10 +84,11 @@ namespace Bachelors.API.Controllers
             try
             {
                 var result = _userProfileApplication.SearchUsers(email);
-                return Request.CreateResponse(HttpStatusCode.OK, ServiceResponse<SearchUsersResponse>.Instance.BuildResponse(ResponseCodes.OK, result));
+                return Request.CreateResponse(HttpStatusCode.OK, ServiceResponse<List<SearchUsersResponse>>.Instance.BuildResponse(ResponseCodes.OK, result));
             }
             catch (Exception ex)
             {
+                LogManager.GetCurrentClassLogger().Error(ex, ex.Message);
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, ServiceResponse.Instance.BuildResponse(ResponseCodes.SERVERERROR));
             }
         }

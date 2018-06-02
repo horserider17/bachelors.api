@@ -89,7 +89,7 @@ namespace Bachelor.DataAccess.UserProfile
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
-        public SearchUsersResponse SearchUsers(string email)
+        public List<SearchUsersResponse> SearchUsers(string email)
         {
             object[] param = { email };
 
@@ -101,6 +101,8 @@ namespace Bachelor.DataAccess.UserProfile
 
             SearchUsersResponse userDetails = null;
 
+            var userDetailsList = new List<SearchUsersResponse>();
+
             while (userDetailsReader.Read())
             {
                 userDetails = new SearchUsersResponse
@@ -110,9 +112,10 @@ namespace Bachelor.DataAccess.UserProfile
                     providerId = Convert.ToInt32(userDetailsReader["providerid"]),
                     imageUrl = Convert.ToString(userDetailsReader["imageurl"]),
                 };
+                userDetailsList.Add(userDetails);
             }
 
-            return userDetails;
+            return userDetailsList;
         }
     }
 }

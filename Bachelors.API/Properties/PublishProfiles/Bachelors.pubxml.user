@@ -10,25 +10,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>05/26/2018 19:59:24</publishTime>
+      <publishTime>06/02/2018 18:01:02</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>05/26/2018 19:59:24</publishTime>
+      <publishTime>06/02/2018 18:01:02</publishTime>
     </File>
     <File Include="bin/Bachelor.Core.Application.dll">
-      <publishTime>05/26/2018 19:46:06</publishTime>
+      <publishTime>06/02/2018 13:22:30</publishTime>
     </File>
     <File Include="bin/Bachelor.DataAccess.dll">
-      <publishTime>05/26/2018 19:46:06</publishTime>
+      <publishTime>06/02/2018 13:22:29</publishTime>
     </File>
     <File Include="bin/Bachelor.Enterprise.Common.dll">
       <publishTime>05/25/2018 18:35:39</publishTime>
     </File>
     <File Include="bin/Bachelor.Entities.dll">
-      <publishTime>05/26/2018 19:46:05</publishTime>
+      <publishTime>05/26/2018 20:54:31</publishTime>
     </File>
     <File Include="bin/Bachelors.API.dll">
-      <publishTime>05/26/2018 19:46:18</publishTime>
+      <publishTime>06/02/2018 13:22:43</publishTime>
     </File>
     <File Include="bin/CommonServiceLocator.dll">
       <publishTime>10/10/2017 13:54:50</publishTime>
@@ -59,6 +59,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>06/18/2017 13:57:10</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>05/28/2018 21:31:23</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>05/25/2018 16:11:16</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>07/28/2017 08:15:02</publishTime>
@@ -231,14 +237,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Global.asax">
       <publishTime>08/10/2017 14:10:49</publishTime>
     </File>
+    <File Include="NLog.config">
+      <publishTime>05/28/2018 21:31:23</publishTime>
+    </File>
     <File Include="packages.config">
-      <publishTime>05/19/2018 18:17:16</publishTime>
+      <publishTime>05/28/2018 21:30:14</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>05/26/2018 19:59:09</publishTime>
+      <publishTime>06/02/2018 18:00:47</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/20/2018 12:21:38</publishTime>
+      <publishTime>06/02/2018 13:22:44</publishTime>
     </File>
   </ItemGroup>
 </Project>
